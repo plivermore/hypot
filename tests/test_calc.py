@@ -13,3 +13,8 @@ def test_2():
     output = source.hypot(input1, input2)
     assert output == expected_output
     
+def test_2():
+    input1, input2 = 5.0,12.0
+    expected_output = 13.0
+    output = source.hypot(input1, input2)
+    assert output == pytest.approx(expected_output,rel=1e-6)
